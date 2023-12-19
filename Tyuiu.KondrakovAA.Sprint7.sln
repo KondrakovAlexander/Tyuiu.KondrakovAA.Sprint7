@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.KondrakovAA.Sprint7.P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.KondrakovAA.Sprint7.Project.V9.Test", "Tyuiu.KondrakovAA.Sprint7.Project.V9.Test\Tyuiu.KondrakovAA.Sprint7.Project.V9.Test.csproj", "{7E063DDC-A49A-4945-B63C-BCE6C97C2013}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "videos", "videos", "{B94B5420-8FE8-4EF0-82BF-5C1DEEBD8625}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
