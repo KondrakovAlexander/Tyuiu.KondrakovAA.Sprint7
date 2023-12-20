@@ -16,7 +16,7 @@ namespace Tyuiu.KondrakovAA.Sprint7.Project.V9
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMain());
+            Application.Run(new FormMain_KAA());
         }
     }
 }
