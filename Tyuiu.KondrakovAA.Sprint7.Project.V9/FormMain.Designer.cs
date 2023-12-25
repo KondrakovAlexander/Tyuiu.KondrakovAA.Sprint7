@@ -31,21 +31,21 @@ namespace Tyuiu.KondrakovAA.Sprint7.Project.V9
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.button10 = new System.Windows.Forms.Button();
             this.buttonSaveFile_KAA = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.buttonCuisine_KAA = new System.Windows.Forms.Button();
+            this.buttonIT_KAA = new System.Windows.Forms.Button();
+            this.buttonMusic_KAA = new System.Windows.Forms.Button();
+            this.buttonVideogames_KAA = new System.Windows.Forms.Button();
+            this.buttonSports_KAA = new System.Windows.Forms.Button();
+            this.buttonScience_KAA = new System.Windows.Forms.Button();
+            this.buttonNature_KAA = new System.Windows.Forms.Button();
             this.openFileDialog_KAA = new System.Windows.Forms.OpenFileDialog();
+            this.listBoxVideos_KAA = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -68,7 +68,7 @@ namespace Tyuiu.KondrakovAA.Sprint7.Project.V9
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.listView1);
+            this.groupBox3.Controls.Add(this.listBoxVideos_KAA);
             this.groupBox3.Location = new System.Drawing.Point(6, 107);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(486, 460);
@@ -76,14 +76,14 @@ namespace Tyuiu.KondrakovAA.Sprint7.Project.V9
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
             // 
-            // listView1
+            // button10
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(7, 19);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(473, 435);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.button10.Location = new System.Drawing.Point(440, 18);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(53, 29);
+            this.button10.TabIndex = 4;
+            this.button10.Text = "button9";
+            this.button10.UseVisualStyleBackColor = true;
             // 
             // buttonSaveFile_KAA
             // 
@@ -97,7 +97,7 @@ namespace Tyuiu.KondrakovAA.Sprint7.Project.V9
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(298, 68);
+            this.button8.Location = new System.Drawing.Point(298, 71);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 23);
             this.button8.TabIndex = 3;
@@ -122,13 +122,13 @@ namespace Tyuiu.KondrakovAA.Sprint7.Project.V9
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button7);
-            this.groupBox2.Controls.Add(this.button6);
-            this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.buttonCuisine_KAA);
+            this.groupBox2.Controls.Add(this.buttonIT_KAA);
+            this.groupBox2.Controls.Add(this.buttonMusic_KAA);
+            this.groupBox2.Controls.Add(this.buttonVideogames_KAA);
+            this.groupBox2.Controls.Add(this.buttonSports_KAA);
+            this.groupBox2.Controls.Add(this.buttonScience_KAA);
+            this.groupBox2.Controls.Add(this.buttonNature_KAA);
             this.groupBox2.Location = new System.Drawing.Point(518, 4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(457, 581);
@@ -136,77 +136,84 @@ namespace Tyuiu.KondrakovAA.Sprint7.Project.V9
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
             // 
-            // button7
+            // buttonCuisine_KAA
             // 
-            this.button7.Location = new System.Drawing.Point(6, 492);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(444, 75);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.buttonCuisine_KAA.Location = new System.Drawing.Point(6, 492);
+            this.buttonCuisine_KAA.Name = "buttonCuisine_KAA";
+            this.buttonCuisine_KAA.Size = new System.Drawing.Size(444, 75);
+            this.buttonCuisine_KAA.TabIndex = 6;
+            this.buttonCuisine_KAA.Text = "Кулинария";
+            this.buttonCuisine_KAA.UseVisualStyleBackColor = true;
+            this.buttonCuisine_KAA.Click += new System.EventHandler(this.setTheme);
             // 
-            // button6
+            // buttonIT_KAA
             // 
-            this.button6.Location = new System.Drawing.Point(6, 413);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(444, 73);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.buttonIT_KAA.Location = new System.Drawing.Point(6, 413);
+            this.buttonIT_KAA.Name = "buttonIT_KAA";
+            this.buttonIT_KAA.Size = new System.Drawing.Size(444, 73);
+            this.buttonIT_KAA.TabIndex = 5;
+            this.buttonIT_KAA.Text = "Технологии";
+            this.buttonIT_KAA.UseVisualStyleBackColor = true;
+            this.buttonIT_KAA.Click += new System.EventHandler(this.setTheme);
             // 
-            // button5
+            // buttonMusic_KAA
             // 
-            this.button5.Location = new System.Drawing.Point(7, 334);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(444, 73);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.buttonMusic_KAA.Location = new System.Drawing.Point(7, 334);
+            this.buttonMusic_KAA.Name = "buttonMusic_KAA";
+            this.buttonMusic_KAA.Size = new System.Drawing.Size(444, 73);
+            this.buttonMusic_KAA.TabIndex = 4;
+            this.buttonMusic_KAA.Text = "Музыка";
+            this.buttonMusic_KAA.UseVisualStyleBackColor = true;
+            this.buttonMusic_KAA.Click += new System.EventHandler(this.setTheme);
             // 
-            // button4
+            // buttonVideogames_KAA
             // 
-            this.button4.Location = new System.Drawing.Point(6, 255);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(444, 73);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonVideogames_KAA.Location = new System.Drawing.Point(6, 255);
+            this.buttonVideogames_KAA.Name = "buttonVideogames_KAA";
+            this.buttonVideogames_KAA.Size = new System.Drawing.Size(444, 73);
+            this.buttonVideogames_KAA.TabIndex = 3;
+            this.buttonVideogames_KAA.Text = "Видеоигры";
+            this.buttonVideogames_KAA.UseVisualStyleBackColor = true;
+            this.buttonVideogames_KAA.Click += new System.EventHandler(this.setTheme);
             // 
-            // button3
+            // buttonSports_KAA
             // 
-            this.button3.Location = new System.Drawing.Point(7, 176);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(444, 73);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonSports_KAA.Location = new System.Drawing.Point(7, 176);
+            this.buttonSports_KAA.Name = "buttonSports_KAA";
+            this.buttonSports_KAA.Size = new System.Drawing.Size(444, 73);
+            this.buttonSports_KAA.TabIndex = 2;
+            this.buttonSports_KAA.Text = "Спорт";
+            this.buttonSports_KAA.UseVisualStyleBackColor = true;
+            this.buttonSports_KAA.Click += new System.EventHandler(this.setTheme);
             // 
-            // button2
+            // buttonScience_KAA
             // 
-            this.button2.Location = new System.Drawing.Point(7, 97);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(444, 73);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonScience_KAA.Location = new System.Drawing.Point(7, 97);
+            this.buttonScience_KAA.Name = "buttonScience_KAA";
+            this.buttonScience_KAA.Size = new System.Drawing.Size(444, 73);
+            this.buttonScience_KAA.TabIndex = 1;
+            this.buttonScience_KAA.Text = "Наука";
+            this.buttonScience_KAA.UseVisualStyleBackColor = true;
+            this.buttonScience_KAA.Click += new System.EventHandler(this.setTheme);
             // 
-            // button1
+            // buttonNature_KAA
             // 
-            this.button1.Location = new System.Drawing.Point(7, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(444, 73);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonNature_KAA.Location = new System.Drawing.Point(7, 18);
+            this.buttonNature_KAA.Name = "buttonNature_KAA";
+            this.buttonNature_KAA.Size = new System.Drawing.Size(444, 73);
+            this.buttonNature_KAA.TabIndex = 0;
+            this.buttonNature_KAA.Text = "Природа";
+            this.buttonNature_KAA.UseVisualStyleBackColor = true;
+            this.buttonNature_KAA.Click += new System.EventHandler(this.setTheme);
             // 
-            // button10
+            // listBoxVideos_KAA
             // 
-            this.button10.Location = new System.Drawing.Point(440, 18);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(53, 29);
-            this.button10.TabIndex = 4;
-            this.button10.Text = "button9";
-            this.button10.UseVisualStyleBackColor = true;
+            this.listBoxVideos_KAA.FormattingEnabled = true;
+            this.listBoxVideos_KAA.Location = new System.Drawing.Point(7, 20);
+            this.listBoxVideos_KAA.Name = "listBoxVideos_KAA";
+            this.listBoxVideos_KAA.Size = new System.Drawing.Size(473, 433);
+            this.listBoxVideos_KAA.TabIndex = 0;
+            this.listBoxVideos_KAA.SelectedIndexChanged += new System.EventHandler(this.listBoxVideosListener);
             // 
             // FormMain_KAA
             // 
@@ -231,19 +238,19 @@ namespace Tyuiu.KondrakovAA.Sprint7.Project.V9
         private System.Windows.Forms.Button buttonSaveFile_KAA;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonCuisine_KAA;
+        private System.Windows.Forms.Button buttonIT_KAA;
+        private System.Windows.Forms.Button buttonMusic_KAA;
+        private System.Windows.Forms.Button buttonVideogames_KAA;
+        private System.Windows.Forms.Button buttonSports_KAA;
+        private System.Windows.Forms.Button buttonScience_KAA;
+        private System.Windows.Forms.Button buttonNature_KAA;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.OpenFileDialog openFileDialog_KAA;
+        private System.Windows.Forms.ListBox listBoxVideos_KAA;
     }
 }
 

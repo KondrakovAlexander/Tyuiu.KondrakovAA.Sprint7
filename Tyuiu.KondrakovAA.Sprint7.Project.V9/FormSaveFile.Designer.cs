@@ -1,7 +1,7 @@
 ﻿
 namespace Tyuiu.KondrakovAA.Sprint7.Project.V9
 {
-    partial class FormSaveFile
+    partial class FormSaveFile_KAA
     {
         /// <summary>
         /// Required designer variable.
@@ -29,125 +29,134 @@ namespace Tyuiu.KondrakovAA.Sprint7.Project.V9
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.buttonPickTheFile_KAA = new System.Windows.Forms.Button();
+            this.labelData_KAA = new System.Windows.Forms.Label();
+            this.labelDuration_KAA = new System.Windows.Forms.Label();
+            this.labelTheme_KAA = new System.Windows.Forms.Label();
+            this.textBoxDateTime_KAA = new System.Windows.Forms.TextBox();
+            this.textBoxDuration_KAA = new System.Windows.Forms.TextBox();
+            this.textBoxName_KAA = new System.Windows.Forms.TextBox();
+            this.labelName_KAA = new System.Windows.Forms.Label();
+            this.openFileDialog_KAA = new System.Windows.Forms.OpenFileDialog();
+            this.comboBoxTheme_KAA = new System.Windows.Forms.ComboBox();
+            this.buttonEnter_KAA = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonPickTheFile_KAA
             // 
-            this.button1.Location = new System.Drawing.Point(12, 134);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(152, 37);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonPickTheFile_KAA.Location = new System.Drawing.Point(12, 157);
+            this.buttonPickTheFile_KAA.Name = "buttonPickTheFile_KAA";
+            this.buttonPickTheFile_KAA.Size = new System.Drawing.Size(152, 37);
+            this.buttonPickTheFile_KAA.TabIndex = 0;
+            this.buttonPickTheFile_KAA.Text = "Выбрать файл";
+            this.buttonPickTheFile_KAA.UseVisualStyleBackColor = true;
+            this.buttonPickTheFile_KAA.Click += new System.EventHandler(this.buttonLoadListener);
             // 
-            // label1
+            // labelData_KAA
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.labelData_KAA.AutoSize = true;
+            this.labelData_KAA.Location = new System.Drawing.Point(9, 13);
+            this.labelData_KAA.Name = "labelData_KAA";
+            this.labelData_KAA.Size = new System.Drawing.Size(72, 13);
+            this.labelData_KAA.TabIndex = 2;
+            this.labelData_KAA.Text = "Дата записи";
             // 
-            // label2
+            // labelDuration_KAA
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.labelDuration_KAA.AutoSize = true;
+            this.labelDuration_KAA.Location = new System.Drawing.Point(9, 36);
+            this.labelDuration_KAA.Name = "labelDuration_KAA";
+            this.labelDuration_KAA.Size = new System.Drawing.Size(80, 13);
+            this.labelDuration_KAA.TabIndex = 3;
+            this.labelDuration_KAA.Text = "Длительность";
             // 
-            // label3
+            // labelTheme_KAA
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 71);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "label3";
+            this.labelTheme_KAA.AutoSize = true;
+            this.labelTheme_KAA.Location = new System.Drawing.Point(248, 13);
+            this.labelTheme_KAA.Name = "labelTheme_KAA";
+            this.labelTheme_KAA.Size = new System.Drawing.Size(34, 13);
+            this.labelTheme_KAA.TabIndex = 4;
+            this.labelTheme_KAA.Text = "Тема";
             // 
-            // label4
+            // textBoxDateTime_KAA
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(249, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "label4";
+            this.textBoxDateTime_KAA.Location = new System.Drawing.Point(87, 10);
+            this.textBoxDateTime_KAA.Name = "textBoxDateTime_KAA";
+            this.textBoxDateTime_KAA.ReadOnly = true;
+            this.textBoxDateTime_KAA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDateTime_KAA.TabIndex = 6;
+            this.textBoxDateTime_KAA.TextChanged += new System.EventHandler(this.TextChanged);
             // 
-            // textBox1
+            // textBoxDuration_KAA
             // 
-            this.textBox1.Location = new System.Drawing.Point(54, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
+            this.textBoxDuration_KAA.Location = new System.Drawing.Point(95, 33);
+            this.textBoxDuration_KAA.Name = "textBoxDuration_KAA";
+            this.textBoxDuration_KAA.ReadOnly = true;
+            this.textBoxDuration_KAA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDuration_KAA.TabIndex = 7;
+            this.textBoxDuration_KAA.TextChanged += new System.EventHandler(this.TextChanged);
             // 
-            // textBox2
+            // textBoxName_KAA
             // 
-            this.textBox2.Location = new System.Drawing.Point(54, 39);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
+            this.textBoxName_KAA.Location = new System.Drawing.Point(309, 33);
+            this.textBoxName_KAA.Name = "textBoxName_KAA";
+            this.textBoxName_KAA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxName_KAA.TabIndex = 8;
+            this.textBoxName_KAA.TextChanged += new System.EventHandler(this.TextChanged);
             // 
-            // textBox3
+            // labelName_KAA
             // 
-            this.textBox3.Location = new System.Drawing.Point(54, 68);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 7;
+            this.labelName_KAA.AutoSize = true;
+            this.labelName_KAA.Location = new System.Drawing.Point(248, 36);
+            this.labelName_KAA.Name = "labelName_KAA";
+            this.labelName_KAA.Size = new System.Drawing.Size(57, 13);
+            this.labelName_KAA.TabIndex = 10;
+            this.labelName_KAA.Text = "Название";
             // 
-            // textBox4
+            // comboBoxTheme_KAA
             // 
-            this.textBox4.Location = new System.Drawing.Point(291, 34);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 8;
+            this.comboBoxTheme_KAA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxTheme_KAA.FormattingEnabled = true;
+            this.comboBoxTheme_KAA.Items.AddRange(new object[] {
+            "Природа",
+            "Спорт",
+            "Наука",
+            "Видеоигры"});
+            this.comboBoxTheme_KAA.Location = new System.Drawing.Point(288, 10);
+            this.comboBoxTheme_KAA.Name = "comboBoxTheme_KAA";
+            this.comboBoxTheme_KAA.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxTheme_KAA.TabIndex = 11;
+            this.comboBoxTheme_KAA.TextChanged += new System.EventHandler(this.TextChanged);
             // 
-            // textBox5
+            // buttonEnter_KAA
             // 
-            this.textBox5.Location = new System.Drawing.Point(291, 8);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 9;
+            this.buttonEnter_KAA.Enabled = false;
+            this.buttonEnter_KAA.Location = new System.Drawing.Point(171, 157);
+            this.buttonEnter_KAA.Name = "buttonEnter_KAA";
+            this.buttonEnter_KAA.Size = new System.Drawing.Size(140, 37);
+            this.buttonEnter_KAA.TabIndex = 12;
+            this.buttonEnter_KAA.Text = "Подтвердить";
+            this.buttonEnter_KAA.UseVisualStyleBackColor = true;
+            this.buttonEnter_KAA.Click += new System.EventHandler(this.buttonEnterListener);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(249, 39);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "label5";
-            // 
-            // FormSaveFile
+            // FormSaveFile_KAA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(445, 206);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Name = "FormSaveFile";
+            this.Controls.Add(this.buttonEnter_KAA);
+            this.Controls.Add(this.comboBoxTheme_KAA);
+            this.Controls.Add(this.labelName_KAA);
+            this.Controls.Add(this.textBoxName_KAA);
+            this.Controls.Add(this.textBoxDuration_KAA);
+            this.Controls.Add(this.textBoxDateTime_KAA);
+            this.Controls.Add(this.labelTheme_KAA);
+            this.Controls.Add(this.labelDuration_KAA);
+            this.Controls.Add(this.labelData_KAA);
+            this.Controls.Add(this.buttonPickTheFile_KAA);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "FormSaveFile_KAA";
             this.Text = "Добавление файла";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -156,16 +165,16 @@ namespace Tyuiu.KondrakovAA.Sprint7.Project.V9
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button buttonPickTheFile_KAA;
+        private System.Windows.Forms.Label labelData_KAA;
+        private System.Windows.Forms.Label labelDuration_KAA;
+        private System.Windows.Forms.Label labelTheme_KAA;
+        private System.Windows.Forms.TextBox textBoxDateTime_KAA;
+        private System.Windows.Forms.TextBox textBoxDuration_KAA;
+        private System.Windows.Forms.TextBox textBoxName_KAA;
+        private System.Windows.Forms.Label labelName_KAA;
+        private System.Windows.Forms.OpenFileDialog openFileDialog_KAA;
+        private System.Windows.Forms.ComboBox comboBoxTheme_KAA;
+        private System.Windows.Forms.Button buttonEnter_KAA;
     }
 }
