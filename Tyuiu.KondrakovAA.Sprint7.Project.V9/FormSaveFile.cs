@@ -25,6 +25,21 @@ namespace Tyuiu.KondrakovAA.Sprint7.Project.V9
         public FormSaveFile_KAA()
         {
             InitializeComponent();
+            this.BackColor = Color.FromArgb(40, 0, 79);
+            this.labelData_KAA.ForeColor = Color.FromArgb(215, 255, 254);
+            this.labelDuration_KAA.ForeColor = Color.FromArgb(215, 255, 254);
+            this.labelTheme_KAA.ForeColor = Color.FromArgb(215, 255, 254);
+            this.labelName_KAA.ForeColor = Color.FromArgb(215, 255, 254);
+
+            this.buttonEnter_KAA.ForeColor = Color.FromArgb(215, 255, 254);
+            this.buttonPickTheFile_KAA.ForeColor = Color.FromArgb(215, 255, 254);
+            this.buttonEnter_KAA.BackColor = Color.FromArgb(186, 2, 60);
+            this.buttonPickTheFile_KAA.BackColor = Color.FromArgb(186, 2, 60);
+
+            this.textBoxDateTime_KAA.ForeColor = Color.FromArgb(215, 255, 254);
+            this.textBoxDuration_KAA.ForeColor = Color.FromArgb(215, 255, 254);
+            this.textBoxName_KAA.ForeColor = Color.FromArgb(215, 255, 254);
+            this.comboBoxTheme_KAA.ForeColor = Color.FromArgb(215, 255, 254);
         }
 
         private void buttonLoadListener(object sender, EventArgs e)
@@ -76,6 +91,15 @@ namespace Tyuiu.KondrakovAA.Sprint7.Project.V9
                     break;
                 case "Видеоигры":
                     savePath = $@"{Directory.GetCurrentDirectory()}\videos\Videogames";
+                    break;
+                case "Музыка":
+                    savePath = $@"{Directory.GetCurrentDirectory()}\videos\Music";
+                    break;
+                case "Технологии":
+                    savePath = $@"{Directory.GetCurrentDirectory()}\videos\Tech";
+                    break;
+                case "Кулинария":
+                    savePath = $@"{Directory.GetCurrentDirectory()}\videos\Cooking";
                     break;
             }
             fileName = textBoxName_KAA.Text;
